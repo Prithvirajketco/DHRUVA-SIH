@@ -6,6 +6,7 @@ import AlertsPage from './pages/AlertsPage';
 import ReportsPage from './pages/ReportsPage';
 import AIPredictionPage from './pages/AIPredictionPage';
 import IoTSensorsPage from './pages/IoTSensorsPage';
+import SettingsPage from './pages/SettingsPage';
 
 function App() {
   const [activeTab, setActiveTab] = useState('map');
@@ -15,22 +16,14 @@ function App() {
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
       
       <main className="flex-1 relative overflow-hidden bg-base">
-        {activeTab === 'dashboard' && <DashboardPage />}
+        {activeTab === 'dashboard' && <DashboardPage setActiveTab={setActiveTab} />}
         {activeTab === 'map' && <MapPage />}
         {activeTab === 'alerts' && <AlertsPage />}
         {activeTab === 'reports' && <ReportsPage />}
         {activeTab === 'prediction' && <AIPredictionPage />}
         {activeTab === 'iot' && <IoTSensorsPage />}
         
-        {/* Placeholders for Settings */}
-        {['settings'].includes(activeTab) && (
-          <div className="flex items-center justify-center h-full text-slate-500">
-            <div className="text-center">
-              <h2 className="text-xl font-semibold mb-2">{activeTab.toUpperCase()}</h2>
-              <p>This module will be implemented in the next phase.</p>
-            </div>
-          </div>
-        )}
+        {activeTab === 'settings' && <SettingsPage />}
       </main>
     </div>
   );

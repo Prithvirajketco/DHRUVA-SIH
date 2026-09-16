@@ -6,16 +6,23 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
       colors: {
         risk: {
-          low: '#22c55e',
-          moderate: '#eab308',
-          high: '#f97316',
-          'very-high': '#ef4444',
+          low: '#10B981', // Emerald 500
+          moderate: '#F59E0B', // Amber 500
+          high: '#F97316', // Orange 500
+          'very-high': '#E11D48', // Rose 600
         },
-        panel: 'rgba(15, 23, 42, 0.85)',
-        card: 'rgba(15, 23, 42, 0.60)',
-        base: '#050a14',
+        panel: '#FFFFFF',
+        card: '#FFFFFF',
+        base: '#F4F5F7',
+      },
+      boxShadow: {
+        'soft': '0 4px 20px rgba(0,0,0,0.03)',
+        'soft-lg': '0 10px 40px rgba(0,0,0,0.05)',
       }
     },
   },

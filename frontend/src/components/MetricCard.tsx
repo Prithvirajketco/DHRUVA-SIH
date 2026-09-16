@@ -8,15 +8,15 @@ interface MetricCardProps {
 
 export default function MetricCard({ label, value, subValue }: MetricCardProps) {
   return (
-    <div className="flex flex-col py-2 border-b border-white/5 last:border-0">
+    <div className="flex flex-col p-3 border border-slate-100 rounded-xl bg-slate-50/50">
       <div className="flex justify-between items-end mb-1">
-        <span className="text-xl font-bold text-white leading-none">{value}</span>
+        <span className="text-xl font-bold text-[#1E293B] leading-none">{value}</span>
       </div>
-      <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">
+      <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
         {label}
       </span>
       {subValue && (
-        <span className="text-xs text-slate-400 mt-1">{subValue}</span>
+        <span className="text-xs font-semibold text-slate-500 mt-1">{subValue}</span>
       )}
     </div>
   );

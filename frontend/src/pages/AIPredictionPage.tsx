@@ -347,74 +347,72 @@ function LocationCard({
   return (
     <button
       onClick={onClick}
-      className={`w-full text-left glass-card rounded-xl p-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg group ${
-        risk !== null ? getRiskBg(risk) : 'border-white/5 opacity-80'
+      className={`w-full text-left bg-white border rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft-lg group ${
+        risk !== null ? getRiskBg(risk) : 'border-slate-100 shadow-soft opacity-90'
       }`}
     >
       {/* Location name + badge */}
-      <div className="flex items-start justify-between mb-3">
+      <div className="flex items-start justify-between mb-4">
         <div>
-          <p className="font-black text-white text-base group-hover:text-blue-400 transition-colors">{loc.name}</p>
-          <p className="text-xs text-slate-500 font-mono">{loc.lat.toFixed(2)}°N · {loc.elevation}m</p>
+          <p className="font-extrabold text-[#1E293B] text-lg group-hover:text-blue-600 transition-colors">{loc.name}</p>
+          <p className="text-xs text-slate-400 font-semibold mt-0.5">{loc.lat.toFixed(2)}°N · {loc.elevation}m</p>
         </div>
         {riskLabel && (
-          <div className={`flex items-center gap-1.5 px-2 py-0.5 rounded-full border text-xs font-bold ${getRiskBg(risk!)}`}>
-            <div className={`w-1.5 h-1.5 rounded-full ${riskLabel.dot} ${risk! >= 70 ? 'animate-pulse' : ''}`} />
+          <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs font-extrabold ${getRiskBg(risk!)}`}>
+            <div className={`w-2 h-2 rounded-full ${riskLabel.dot} ${risk! >= 70 ? 'animate-pulse' : ''}`} />
             <span className={riskLabel.color}>{riskLabel.text}</span>
           </div>
         )}
       </div>
 
       {/* Risk score gauge */}
-      <div className="flex items-center gap-3 mb-3">
+      <div className="flex items-center gap-4 mb-5">
         {loading ? (
-          <div className="flex-1 h-2 bg-slate-800 rounded-full animate-pulse" />
+          <div className="flex-1 h-3 bg-slate-100 rounded-full animate-pulse" />
         ) : risk !== null ? (
           <>
-            <div className="relative flex-1 h-2 bg-slate-800 rounded-full overflow-hidden">
+            <div className="relative flex-1 h-3 bg-slate-100 rounded-full overflow-hidden border border-slate-200/50">
               <div
-                className="absolute h-full rounded-full transition-all duration-500"
+                className="absolute h-full rounded-full transition-all duration-500 shadow-sm"
                 style={{ width: `${risk}%`, backgroundColor: getRiskColor(risk) }}
               />
             </div>
-            <span className="text-base font-black w-10 text-right" style={{ color: getRiskColor(risk) }}>
+            <span className="text-xl font-black w-14 text-right" style={{ color: getRiskColor(risk) }}>
               {risk}%
             </span>
           </>
         ) : (
-          <div className="flex-1 h-2 bg-slate-800 rounded-full" />
+          <div className="flex-1 h-3 bg-slate-100 rounded-full" />
         )}
       </div>
 
       {/* Key stats row */}
-      <div className="grid grid-cols-3 gap-2 text-xs">
-        <div className="flex items-center gap-1.5 bg-slate-900/50 rounded-lg px-2 py-1.5 border border-slate-800">
-          <Droplets size={11} className="text-blue-400 shrink-0" />
-          <span className="text-slate-300 truncate">{effectiveRainfall.toFixed(0)}mm</span>
+      <div className="grid grid-cols-3 gap-3 text-xs">
+        <div className="flex items-center gap-2 bg-slate-50 rounded-xl px-3 py-2 border border-slate-100">
+          <Droplets size={14} className="text-blue-500 shrink-0" />
+          <span className="text-slate-600 font-bold truncate">{effectiveRainfall.toFixed(0)}<span className="text-slate-400 font-medium">mm</span></span>
         </div>
-        <div className="flex items-center gap-1.5 bg-slate-900/50 rounded-lg px-2 py-1.5 border border-slate-800">
-          <Mountain size={11} className="text-yellow-400 shrink-0" />
-          <span className="text-slate-300">{loc.slope}°</span>
+        <div className="flex items-center gap-2 bg-slate-50 rounded-xl px-3 py-2 border border-slate-100">
+          <Mountain size={14} className="text-yellow-500 shrink-0" />
+          <span className="text-slate-600 font-bold">{loc.slope}<span className="text-slate-400 font-medium">°</span></span>
         </div>
-        <div className="flex items-center gap-1.5 bg-slate-900/50 rounded-lg px-2 py-1.5 border border-slate-800">
-          <Activity size={11} className="text-purple-400 shrink-0" />
-          <span className="text-slate-300 truncate">FoS {result?.fos ?? '—'}</span>
+        <div className="flex items-center gap-2 bg-slate-50 rounded-xl px-3 py-2 border border-slate-100">
+          <Activity size={14} className="text-purple-500 shrink-0" />
+          <span className="text-slate-600 font-bold truncate">FoS {result?.fos ?? '—'}</span>
         </div>
       </div>
 
       {/* Temporal mini-preview */}
       {result && (
-        <div className="mt-2.5 flex items-center gap-1 text-xs text-slate-600">
-          <Clock size={10} />
-          <span>Today <span style={{ color: getRiskColor(result.temporal_projection[0]) }}>{result.temporal_projection[0]}%</span></span>
-          <span className="mx-0.5">·</span>
-          <span>+6h <span style={{ color: getRiskColor(result.temporal_projection[1]) }}>{result.temporal_projection[1]}%</span></span>
-          <span className="mx-0.5">·</span>
-          <span>+72h <span style={{ color: getRiskColor(result.temporal_projection[2]) }}>{result.temporal_projection[2]}%</span></span>
+        <div className="mt-4 flex items-center justify-between text-xs font-semibold text-slate-400 bg-slate-50 p-2 rounded-lg border border-slate-100">
+          <div className="flex items-center gap-1.5"><Clock size={12} className="text-slate-400" /> Projection</div>
+          <div className="flex gap-3">
+            <span>Now <span className="font-bold" style={{ color: getRiskColor(result.temporal_projection[0]) }}>{result.temporal_projection[0]}%</span></span>
+            <span>+6h <span className="font-bold" style={{ color: getRiskColor(result.temporal_projection[1]) }}>{result.temporal_projection[1]}%</span></span>
+            <span>+72h <span className="font-bold" style={{ color: getRiskColor(result.temporal_projection[2]) }}>{result.temporal_projection[2]}%</span></span>
+          </div>
         </div>
       )}
-
-      <p className="text-xs text-slate-600 mt-2 group-hover:text-slate-500 transition-colors">Click to expand full analysis →</p>
     </button>
   );
 }
@@ -478,54 +476,54 @@ export default function AIPredictionPage() {
   const lowCount      = predictions.filter(p => (p.result?.current_risk ?? 0) < 40 && p.result !== null).length;
 
   return (
-    <div className="p-5 h-full overflow-y-auto bg-slate-950 text-slate-200">
+    <div className="p-8 h-full overflow-y-auto bg-[#F4F5F7] text-[#1E293B]">
 
       {/* Header */}
-      <div className="flex flex-wrap justify-between items-center mb-5 gap-3">
+      <div className="flex flex-wrap justify-between items-center mb-8 gap-3">
         <div>
-          <h1 className="text-2xl font-bold text-white flex items-center gap-3">
-            <Activity className="text-blue-500" size={26} />
+          <h1 className="text-3xl font-extrabold text-[#1E293B] flex items-center gap-3 tracking-tight">
+            <Activity className="text-blue-500" size={32} />
             AI Prediction Engine
           </h1>
-          <p className="text-xs text-slate-500 mt-0.5 font-mono">
+          <p className="text-sm text-slate-500 mt-1 font-semibold">
             {DIMA_HASAO_LOCATIONS.length} monitoring stations · Dima Hasao, Assam · Engine: {modelVersion}
           </p>
         </div>
         <button
           onClick={() => runAll(rainfallBoost)}
-          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-lg text-sm font-bold transition-colors shadow-[0_0_10px_rgba(59,130,246,0.3)]"
+          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-5 py-2.5 rounded-xl text-white text-sm font-bold transition-all shadow-md active:scale-95"
         >
-          <Activity size={14} /> Re-run All
+          <Activity size={16} /> Re-run All
         </button>
       </div>
 
       {/* Storm Simulator Bar */}
-      <div className="glass-card rounded-xl p-4 mb-5 border border-white/5">
-        <div className="flex flex-wrap items-center gap-4">
+      <div className="bg-white rounded-2xl p-6 mb-8 shadow-soft border border-slate-100">
+        <div className="flex flex-wrap items-center gap-6">
           <div className="flex items-center gap-2 shrink-0">
-            <Droplets size={16} className="text-blue-400" />
-            <span className="text-sm font-bold text-white">Storm Simulator</span>
-            <span className="text-xs text-slate-400">(applies extra rainfall to all stations)</span>
+            <Droplets size={20} className="text-blue-500" />
+            <span className="text-base font-bold text-[#1E293B]">Storm Simulator</span>
+            <span className="text-xs font-semibold text-slate-400">(applies extra rainfall to all stations)</span>
           </div>
-          <div className="flex-1 min-w-48 flex items-center gap-3">
-            <div className="relative flex-1 h-2 bg-slate-800 rounded-full">
-              <div className="absolute h-full rounded-full bg-blue-500 transition-all" style={{ width: `${(rainfallBoost / 250) * 100}%` }} />
+          <div className="flex-1 min-w-[300px] flex items-center gap-4">
+            <div className="relative flex-1 h-3 bg-slate-100 rounded-full border border-slate-200">
+              <div className="absolute h-full rounded-full bg-blue-500 transition-all shadow-[0_0_10px_rgba(59,130,246,0.5)]" style={{ width: `${(rainfallBoost / 250) * 100}%` }} />
             </div>
             <input
               type="range" min={0} max={250} step={5} value={rainfallBoost}
               onChange={e => handleBoostChange(parseInt(e.target.value))}
-              className="absolute opacity-0 w-48 cursor-pointer h-2"
-              style={{ position: 'relative', marginTop: '-8px' }}
+              className="absolute opacity-0 w-full max-w-[400px] cursor-pointer h-3"
+              style={{ position: 'relative', marginTop: '-12px' }}
             />
-            <span className={`text-sm font-black w-16 ${rainfallBoost > 100 ? 'text-red-400' : rainfallBoost > 50 ? 'text-yellow-400' : 'text-blue-400'}`}>
+            <span className={`text-base font-black w-20 ${rainfallBoost > 100 ? 'text-red-500' : rainfallBoost > 50 ? 'text-yellow-500' : 'text-blue-500'}`}>
               +{rainfallBoost}mm
             </span>
           </div>
           <div className="flex gap-2 shrink-0">
             {[{ label: '☀️ Clear', val: 0 }, { label: '🌧️ Storm', val: 100 }, { label: '⛈️ Extreme', val: 220 }].map(s => (
               <button key={s.label} onClick={() => handleBoostChange(s.val)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
-                  rainfallBoost === s.val ? 'bg-blue-600 border-blue-500 text-white shadow-[0_0_10px_rgba(37,99,235,0.3)]' : 'bg-slate-900 border-slate-700 text-slate-400 hover:border-slate-600'
+                className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all ${
+                  rainfallBoost === s.val ? 'bg-blue-50 border-blue-200 text-blue-700 shadow-sm' : 'bg-white border-slate-200 text-slate-500 hover:border-slate-300'
                 }`}>{s.label}
               </button>
             ))}
@@ -534,24 +532,24 @@ export default function AIPredictionPage() {
       </div>
 
       {/* Summary Pills + Filter */}
-      <div className="flex flex-wrap items-center gap-3 mb-5">
+      <div className="flex flex-wrap items-center gap-3 mb-6">
         {[
-          { level: 'ALL',      label: `All (${DIMA_HASAO_LOCATIONS.length})`, color: 'border-white/10 bg-white/5 text-slate-300' },
+          { level: 'ALL',      label: `All (${DIMA_HASAO_LOCATIONS.length})`, color: 'border-slate-200 bg-white text-slate-600' },
           { level: 'VERY_HIGH',label: `🔴 Very High (${veryHighCount})`,      color: 'border-risk-very-high/30 bg-risk-very-high/10 text-risk-very-high' },
           { level: 'HIGH',     label: `🟠 High (${highCount})`,               color: 'border-risk-high/30 bg-risk-high/10 text-risk-high' },
           { level: 'MODERATE', label: `🟡 Moderate (${moderateCount})`,       color: 'border-risk-moderate/30 bg-risk-moderate/10 text-risk-moderate' },
           { level: 'LOW',      label: `🟢 Low (${lowCount})`,                 color: 'border-risk-low/30 bg-risk-low/10 text-risk-low' },
         ].map(f => (
           <button key={f.level} onClick={() => setFilterLevel(f.level as any)}
-            className={`px-3 py-1.5 rounded-full text-xs font-bold border transition-all ${f.color} ${filterLevel === f.level ? 'ring-2 ring-white/20' : 'opacity-70 hover:opacity-100'}`}>
+            className={`px-4 py-2 rounded-full text-xs font-bold border transition-all ${f.color} ${filterLevel === f.level ? 'shadow-sm ring-2 ring-slate-200 ring-offset-1' : 'opacity-70 hover:opacity-100 bg-transparent'}`}>
             {f.label}
           </button>
         ))}
-        <span className="ml-auto text-xs text-slate-500 font-mono">sorted by risk ↓</span>
+        <span className="ml-auto text-xs font-semibold text-slate-400">sorted by risk ↓</span>
       </div>
 
       {/* Grid of location cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
         {filtered.map(pred => (
           <LocationCard
             key={pred.loc.id}

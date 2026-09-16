@@ -1,4 +1,5 @@
 import React from 'react';
+import { useAnimatedNumber } from '../hooks/useAnimatedNumber';
 
 interface RiskGaugeProps {
   score: number; // 0 to 100
@@ -6,6 +7,7 @@ interface RiskGaugeProps {
 }
 
 export default function RiskGauge({ score, category }: RiskGaugeProps) {
+  const animatedScore = useAnimatedNumber(score, 800);
   const radius = 120;
   const strokeWidth = 12;
   const center = 150;
@@ -54,19 +56,17 @@ export default function RiskGauge({ score, category }: RiskGaugeProps) {
           style={{ transition: 'stroke-dashoffset 1s ease-in-out' }}
         />
 
-        {/* Needle */}
+        {/* Needle (Notch on the outside track) */}
         <g transform={`rotate(${needleAngle} ${center} ${center})`} style={{ transition: 'transform 1s ease-in-out' }}>
-          <circle cx={center} cy={center} r="6" fill="currentColor" className="text-white" />
-          <path d={`M ${center - 4} ${center} L ${center} ${center - radius + 10} L ${center + 4} ${center} Z`} fill="currentColor" className="text-white" />
+          <rect x={center - 3} y={center - radius - 12} width={6} height={24} rx={3} fill="white" className="drop-shadow-lg" />
         </g>
         
         {/* Tick marks could go here */}
       </svg>
       
-      <div className="absolute bottom-0 flex flex-col items-center text-center">
-        <span className="text-xs font-bold tracking-[0.2em] text-slate-400 mb-1">VOLCANIC ACTIVITY INDEX</span>
-        {/* We reuse the Vulcani aesthetic but change text in the parent or here */}
-        <span className="text-5xl font-black text-white">{score.toFixed(3)}</span>
+      <div className="absolute top-[60px] flex flex-col items-center text-center w-full">
+        <span className="text-xs font-bold tracking-[0.2em] text-slate-300 mb-1">LANDSLIDE RISK INDEX</span>
+        <span className="text-5xl font-black text-white font-mono">{animatedScore.toFixed(3)}</span>
         <span className={`text-xs font-bold mt-2 px-3 py-1 rounded-full bg-white/10 ${colorClass}`}>
           ({category})
         </span>

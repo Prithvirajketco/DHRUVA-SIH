@@ -31,35 +31,34 @@ export default function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
   ];
 
   return (
-    <div className="w-24 bg-panel border-r border-white/5 text-slate-300 flex flex-col h-full shrink-0 items-center py-6 backdrop-blur-xl z-50">
-      <div className="mb-8 flex flex-col items-center">
-        <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center mb-1 shadow-[0_0_15px_rgba(249,115,22,0.4)]">
-          <span className="text-white font-black text-xl">▲</span>
+    <div className="w-[88px] bg-[#1E293B] border-r border-slate-800 text-slate-300 flex flex-col h-full shrink-0 items-center py-8 z-50">
+      <div className="mb-10 flex flex-col items-center">
+        <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
+          <span className="text-[#1E293B] font-black text-2xl">▲</span>
         </div>
       </div>
 
-      <nav className="flex-1 w-full px-2 flex flex-col gap-4 items-center">
+      <nav className="flex-1 w-full px-3 flex flex-col gap-6 items-center">
         {navItems.map((item) => (
           <button
             key={item.id}
             onClick={() => setActiveTab(item.id)}
-            className={`flex flex-col items-center justify-center gap-1 w-full py-3 rounded-xl transition-all
+            className={`relative flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300
               ${activeTab === item.id 
-                ? 'bg-accent/10 text-accent shadow-[0_0_15px_rgba(249,115,22,0.15)] relative' 
-                : 'text-slate-500 hover:text-slate-300 hover:bg-white/5'}`}
+                ? 'bg-[#F4F5F7] text-[#1E293B] shadow-[0_0_20px_rgba(255,255,255,0.1)]' 
+                : 'text-slate-400 hover:text-white hover:bg-white/10'}`}
           >
             {activeTab === item.id && (
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-accent rounded-r-md"></div>
+              <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-1 h-8 bg-white rounded-r-md"></div>
             )}
-            <item.icon size={22} className={activeTab === item.id ? 'text-accent' : ''} />
-            <span className="text-[10px] font-semibold uppercase tracking-wider">{item.label}</span>
+            <item.icon size={20} strokeWidth={activeTab === item.id ? 2.5 : 2} />
           </button>
         ))}
       </nav>
 
       <div className="mt-4 flex flex-col items-center gap-2">
         <div 
-          className={`w-3 h-3 rounded-full ${isOffline ? 'bg-risk-very-high' : 'bg-risk-low'} shadow-[0_0_8px_currentColor]`}
+          className={`w-3 h-3 rounded-full ${isOffline ? 'bg-risk-very-high' : 'bg-risk-low'} shadow-md`}
           title={isOffline ? 'Offline' : 'Online'}
         ></div>
       </div>
