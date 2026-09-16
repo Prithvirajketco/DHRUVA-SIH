@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from typing import Optional, Dict, Any
 
 class Settings(BaseSettings):
-    PROJECT_ROOT: str = os.getenv("PROJECT_ROOT", "d:/Projects/SIH Landslides")
+    PROJECT_ROOT: str = os.getenv("PROJECT_ROOT", str(Path(__file__).resolve().parent.parent.parent.parent))
     APP_NAME: str = "SIH Landslide Early-Warning Platform"
 
     class Config:
