@@ -1,0 +1,21 @@
+factors:
+  - name: elevation
+    label: "Elevation (m)"
+    group: terrain
+    high_is_risky: false
+  - name: slope
+    label: "Slope (degrees)"
+    group: terrain
+    high_is_risky: true
+  - name: rainfall_24h
+    label: "24h Rainfall (mm)"
+    group: hydrology
+    high_is_risky: true
+  - name: rainfall_72h
+    label: "72h Rainfall (mm)"
+    group: hydrology
+    high_is_risky: true
+  - name: historical_landslide_density
+    label: "Historical Landslide Density"
+    group: historical
+    high_is_risky: true

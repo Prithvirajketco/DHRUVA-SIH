@@ -1,0 +1,16 @@
+risk_thresholds:
+  low: 0.25
+  moderate: 0.50
+  high: 0.75
+  watch: 0.50
+  alert: 0.70
+  high_alert: 0.85
+
+risk_categories:
+  1: "Low"
+  2: "Moderate"
+  3: "High"
+  4: "Very High"
+
+rainfall:
+  minimum_24h_alert_mm: 100

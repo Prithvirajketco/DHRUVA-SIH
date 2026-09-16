@@ -1,0 +1,23 @@
+study_area:
+  name: "Dima Hasao"
+  state: "Assam"
+  country: "India"
+  place_query: "Dima Hasao, Assam, India"
+  center_lat: 25.51
+  center_lon: 93.01
+  zoom: 9
+  bbox:
+    min_lon: 92.2
+    max_lon: 93.8
+    min_lat: 25.0
+    max_lat: 26.2
+
+grid:
+  resolution_m: 500
+  crs: "EPSG:4326"
+  inference_downsample_factor: 10
+
+model:
+  default_algorithm: "random_forest"
+  version_prefix: "rf"
+  negative_to_positive_ratio: 2

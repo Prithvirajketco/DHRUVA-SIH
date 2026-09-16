@@ -1,0 +1,254 @@
+
+--- [SLIDE 1] ---
+
+SMART INDIA HACKATHON 2025
+                                TEAM DHRUVA
+
+Problem Statement ID: SIH26001
+
+Problem Statement Title: 
+AI-Based early warning and landslide Risk Monitoring System in NER 
+
+Theme: Disaster Man
+agement
+
+PS Category- Software/Hardware: Soft
+ware
+
+[NOTES]:
+
+
+--- [SLIDE 2] ---
+
+2
+TEAM DHRUVA
+TEAM DHRUVA
+Proposed Solution (Describe your Idea/Solution/Prototype)
+•
+SLOPE-X Platform:
+ An AI-powered real-time slope intelligence system transforming static landslide maps into 
+6h–72h predictive warnings
+.
+•
+Physics-Informed 3D Digital Twin:
+ Continuously monitors pore-water pressure, soil saturation, and slope displacement for critical mountain terrain.
+•
+Multi-Sensor Fusion Engine:
+ Integrates Sentinel-1 InSAR radar, DEM elevation, IMD rainfall feeds, and ground-level IoT moisture sensors into one map.
+•
+GIS Command Dashboard:
+ Mapbox & Next.js dark interface providing localized risk heatmaps, community evacuation routes, and automated siren triggers.
+•
+Offline-First Resilience:
+ Utilizes PWA edge caching & mesh synchronization to ensure full alert operations during network and power blackouts.
+•
+Proactive Impact:
+ Shifts regional disaster management from 
+reactive flood/landslide response → data-driven preventive action
+.
+COMMAND CENTER & EARLY WARNING FLOW
+Multi-Source Feeds
+InSAR, IMD Rain & IoT Sensors
+3D Slope Twin
+Real-Time Pore Water Pressure
+Ensemble AI
+XGBoost & LSTM Lead Time
+Offline Mesh Sync
+PWA Disaster Resilience
+Risk Engine
+Live GIS Map
+Early Alerts
+
+[NOTES]:
+
+
+--- [SLIDE 3] ---
+What is the problem?
+1. Difficulty in identifying high-risk landslide/flood zones in advance
+2. Lack of localized, real-time risk information
+3. Delayed or non-actionable early warnings
+4. Difficulty prioritizing the most critical locations for response
+5. Roads and evacuation routes becoming unsafe or blocked
+6. Fragmented disaster information from multiple sources
+7. Communication/network failure during disasters
+8. Rapidly changing ground and environmental conditions
+TEAM DHRUVA
+
+[NOTES]:
+
+
+--- [SLIDE 4] ---
+
+3
+TECHNICAL APPROACH
+•
+Integrates 
+Sentinel-1 InSAR satellite, DEM terrain, IMD rainfall feeds & IoT sensors
+ into a unified PostGIS spatial datastore.
+•
+Constructs a 
+physics-informed 3D slope digital twin
+ to compute continuous pore-water pressure and shear strength in real time.
+•
+Utilizes an 
+ensemble AI engine (XGBoost + LSTM)
+ for dynamic slope susceptibility scoring and 6h–72h predictive warnings.
+•
+Delivers a 
+Next.js & Mapbox GIS command center
+ displaying live hazard heatmaps, evacuation routes & automated sirens.
+•
+Provides 
+offline-first mesh synchronization
+ and PWA caching to maintain operations during network and power blackouts.
+•
+Transitions regional disaster management from 
+reactive rescue → proactive, data-driven early intervention
+.
+LIVE RISK MAP & GIS COMMAND DASHBOARD
+SLOPEX ENSEMBLE AI ENGINE
+XGBoost Risk Indexing • 3D Digital Twin • 6h–72h LSTM Prediction
+EARLY ACTION
+Timely Warnings & Sirens
+OFFLINE MESH
+Sync During Outages
+TEAM DHRUVA
+
+[NOTES]:
+
+
+--- [SLIDE 5] ---
+FEASIBILITY AND VIABILITY
+TEAM DHRUVA
+
+[NOTES]:
+
+
+--- [SLIDE 6] ---
+IMPACT AND BENEFITS
+
+Combines 
+IMD, CWC, GSI & NDMA/SACHET
+ information into one decision-support platform. 
+Converts multiple data sources into 
+location-specific flood & landslide risk insights
+. 
+Integrates 
+real-time citizen/field reports
+ to capture changing on-ground conditions. 
+Helps authorities identify 
+high-risk zones and critical incidents first
+ for faster action. 
+Enables 
+offline access and local data capture
+, supporting communication during connectivity failures. 
+Moves disaster management from 
+reactive response → proactive, data-driven action
+. 
+TEAM DHRUVA
+
+[NOTES]:
+
+
+--- [SLIDE 7] ---
+RESEARCH AND REFERENCES
+  
+ISRO–NRSC (2023) — Landslide Atlas of India: Mapping, Monitoring and Advance Techniques Using Space-Based Inputs
+NRSC–ISRO & ASDMA (2025) — Flood Hazard Zonation Atlas of Assam: Using Multi-Sensor Satellite Data (1998–2023)
+Sharma, M. & Laskar, S. (2025) — An IoT Based Landslide Monitoring and Early Warning System for Guwahati City
+Ramesh, M. V. et al. (2022/2023) — Landslide Early Warning Systems: Requirements and Solutions for Disaster Risk Reduction—India
+Geological Survey of India — National Landslide Forecasting Centre (NLFC)
+TEAM DHRUVA
+
+[NOTES]:
+
+
+--- [SLIDE 8] ---
+TEAM MEMBERS
+
+Name
+Reg. No.
+Dept.
+Year of Study
+Semester
+Gender
+Email id
+Mobile no.
+Team Leader
+Deven Jamaria
+RA2511019010086
+AerospaceEngineering
+2
+3
+Male
+dj3601@srmist.edu.in
+9904611148
+Team Member
+Om Agrawal
+RA2511019010099
+AerospaceEngineering
+
+2
+3
+Male
+oa7804@srmist.edu.in
+8085318609
+Team Member
+Paarth Mukherjee
+RA2511019010082
+AerospaceEngineering
+2
+3
+Male
+pm5949@srmist.edu.in 
+
+
+6385446089
+Team Member
+Vijeta Sargam
+RA2511030010079
+Networking and Communication
+2
+3
+Female
+vs2991@srmist.edu.in
+9693536234
+Team Member
+Avaneesh Chandrashekhar Shettigar
+RA2511019010119
+Aerospace Engineering
+2
+3
+Male
+as7591@srmist.edu.in
+9380343795
+Team Member
+Prithviraj Ketkale
+RA2511018010060
+Mechatronics engineering (Core)
+2
+3
+Male
+pk4770@srmist.edu.in
+9021792778
+Faculty Mentor (Mandatory)
+Dr. KS Vignesh 
+
+Associate Professor Mechanical Engineering
+
+
+Male
+vigneshk1@srmist.edu.in
+96008 80411
+Industry Mentor (Mandatory)
+Dr.Manikanda Bharathi
+
+
+
+
+Male
+ceo@aquaforgerobotics.com
+89402 95211
+TEAM DHRUVA
+
+[NOTES]:

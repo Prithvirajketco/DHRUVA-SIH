@@ -1,0 +1,13 @@
+{
+  "total_cells": 67,
+  "low_risk_cells": 15,
+  "moderate_risk_cells": 1,
+  "high_risk_cells": 0,
+  "very_high_risk_cells": 51,
+  "max_risk_score": 0.98,
+  "mean_risk_score": 0.761,
+  "max_rainfall_24h": 99.4,
+  "model_version": "rf-v1",
+  "prediction_timestamp": "2026-09-04T03:05:47.417420Z",
+  "is_demo_data": true
+}

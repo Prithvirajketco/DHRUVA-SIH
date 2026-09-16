@@ -1,0 +1,1705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.75128677508334,
+          25.500822550965445
+        ]
+      },
+      "properties": {
+        "id": "syn_0",
+        "event_date": "2020-06-22",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.62937074067257,
+          25.112064713521253
+        ]
+      },
+      "properties": {
+        "id": "syn_1",
+        "event_date": "2021-08-29",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.86408381832224,
+          25.54141919781027
+        ]
+      },
+      "properties": {
+        "id": "syn_2",
+        "event_date": "2019-07-30",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.41794129187332,
+          25.401678539546403
+        ]
+      },
+      "properties": {
+        "id": "syn_3",
+        "event_date": "2017-07-20",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.7697076403638,
+          25.488923896038983
+        ]
+      },
+      "properties": {
+        "id": "syn_4",
+        "event_date": "2016-06-23",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.9640520229819,
+          25.63951068681645
+        ]
+      },
+      "properties": {
+        "id": "syn_5",
+        "event_date": "2020-08-30",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.97234775834151,
+          25.6227152565443
+        ]
+      },
+      "properties": {
+        "id": "syn_6",
+        "event_date": "2023-08-18",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.98091302764489,
+          25.41073683313237
+        ]
+      },
+      "properties": {
+        "id": "syn_7",
+        "event_date": "2022-06-23",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.17410029576735,
+          25.51514134216932
+        ]
+      },
+      "properties": {
+        "id": "syn_8",
+        "event_date": "2019-09-24",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.11347524516394,
+          25.506581169027257
+        ]
+      },
+      "properties": {
+        "id": "syn_9",
+        "event_date": "2016-06-09",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.64558898084388,
+          25.53621664438918
+        ]
+      },
+      "properties": {
+        "id": "syn_10",
+        "event_date": "2021-09-21",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.93719113443065,
+          25.334691235945545
+        ]
+      },
+      "properties": {
+        "id": "syn_11",
+        "event_date": "2017-07-16",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.23065055468678,
+          25.010186255784454
+        ]
+      },
+      "properties": {
+        "id": "syn_12",
+        "event_date": "2018-09-06",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.06978717857508,
+          25.765870514357882
+        ]
+      },
+      "properties": {
+        "id": "syn_13",
+        "event_date": "2021-12-12",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.19774287844773,
+          25.314454219601927
+        ]
+      },
+      "properties": {
+        "id": "syn_14",
+        "event_date": "2015-08-18",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.20562588057265,
+          25.111551485434394
+        ]
+      },
+      "properties": {
+        "id": "syn_15",
+        "event_date": "2021-06-26",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.1320496581716,
+          25.45574853458
+        ]
+      },
+      "properties": {
+        "id": "syn_16",
+        "event_date": "2015-09-24",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.92679295019433,
+          25.670839605718992
+        ]
+      },
+      "properties": {
+        "id": "syn_17",
+        "event_date": "2022-08-16",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.88787571410454,
+          25.739489654589782
+        ]
+      },
+      "properties": {
+        "id": "syn_18",
+        "event_date": "2016-09-22",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.34361847238507,
+          25.405319947821823
+        ]
+      },
+      "properties": {
+        "id": "syn_19",
+        "event_date": "2022-08-03",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.01421416160906,
+          25.77852032849154
+        ]
+      },
+      "properties": {
+        "id": "syn_20",
+        "event_date": "2022-07-09",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.17214303952841,
+          25.207088600316013
+        ]
+      },
+      "properties": {
+        "id": "syn_21",
+        "event_date": "2021-09-25",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.91354544197647,
+          25.631725666511706
+        ]
+      },
+      "properties": {
+        "id": "syn_22",
+        "event_date": "2018-08-02",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8331053247991,
+          25.483568642788022
+        ]
+      },
+      "properties": {
+        "id": "syn_23",
+        "event_date": "2015-06-09",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.98629703318751,
+          25.75993543241926
+        ]
+      },
+      "properties": {
+        "id": "syn_24",
+        "event_date": "2016-08-28",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.16514887946751,
+          25.031054320756382
+        ]
+      },
+      "properties": {
+        "id": "syn_25",
+        "event_date": "2016-09-08",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.16963572238745,
+          25.192686975621562
+        ]
+      },
+      "properties": {
+        "id": "syn_26",
+        "event_date": "2017-07-26",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.26090649172099,
+          25.369549537544938
+        ]
+      },
+      "properties": {
+        "id": "syn_27",
+        "event_date": "2019-07-22",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.03587286660391,
+          25.48662923119277
+        ]
+      },
+      "properties": {
+        "id": "syn_28",
+        "event_date": "2019-09-27",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.12232004673548,
+          25.65015789285593
+        ]
+      },
+      "properties": {
+        "id": "syn_29",
+        "event_date": "2017-06-26",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.832611144317,
+          25.66738868601203
+        ]
+      },
+      "properties": {
+        "id": "syn_30",
+        "event_date": "2021-07-12",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.86263537600789,
+          25.32431024204318
+        ]
+      },
+      "properties": {
+        "id": "syn_31",
+        "event_date": "2024-06-15",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.18590973485729,
+          25.126240399142972
+        ]
+      },
+      "properties": {
+        "id": "syn_32",
+        "event_date": "2020-06-02",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.30547759721932,
+          25.16381603749094
+        ]
+      },
+      "properties": {
+        "id": "syn_33",
+        "event_date": "2019-07-24",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.00943804494213,
+          25.14371899507107
+        ]
+      },
+      "properties": {
+        "id": "syn_34",
+        "event_date": "2019-07-17",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.77915535932088,
+          25.1193255378574
+        ]
+      },
+      "properties": {
+        "id": "syn_35",
+        "event_date": "2018-08-28",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.72947733736858,
+          25.399938007682344
+        ]
+      },
+      "properties": {
+        "id": "syn_36",
+        "event_date": "2015-09-27",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.01094018690206,
+          25.50678155847854
+        ]
+      },
+      "properties": {
+        "id": "syn_37",
+        "event_date": "2021-09-23",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.13788455115402,
+          25.722465748627734
+        ]
+      },
+      "properties": {
+        "id": "syn_38",
+        "event_date": "2020-09-21",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.93455991798349,
+          25.6044616397332
+        ]
+      },
+      "properties": {
+        "id": "syn_39",
+        "event_date": "2021-03-28",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.97493552473435,
+          25.766361090992007
+        ]
+      },
+      "properties": {
+        "id": "syn_40",
+        "event_date": "2019-07-14",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.75035515395797,
+          25.35870859262795
+        ]
+      },
+      "properties": {
+        "id": "syn_41",
+        "event_date": "2022-06-18",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.2372235745571,
+          25.15370945989851
+        ]
+      },
+      "properties": {
+        "id": "syn_42",
+        "event_date": "2020-06-02",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.77662344042321,
+          25.532515229136482
+        ]
+      },
+      "properties": {
+        "id": "syn_43",
+        "event_date": "2020-08-19",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.14960180530876,
+          25.63267340121557
+        ]
+      },
+      "properties": {
+        "id": "syn_44",
+        "event_date": "2016-08-25",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.87594300960622,
+          25.389756828183234
+        ]
+      },
+      "properties": {
+        "id": "syn_45",
+        "event_date": "2022-06-22",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.11803645588026,
+          25.499672231605633
+        ]
+      },
+      "properties": {
+        "id": "syn_46",
+        "event_date": "2019-06-28",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.39130333326747,
+          25.26012157440232
+        ]
+      },
+      "properties": {
+        "id": "syn_47",
+        "event_date": "2019-07-13",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.07873938572274,
+          25.426204585535462
+        ]
+      },
+      "properties": {
+        "id": "syn_48",
+        "event_date": "2020-06-19",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.25772363661923,
+          25.152259154539568
+        ]
+      },
+      "properties": {
+        "id": "syn_49",
+        "event_date": "2020-07-19",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.0059565556511,
+          25.648246591352912
+        ]
+      },
+      "properties": {
+        "id": "syn_50",
+        "event_date": "2018-07-01",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.04782394961562,
+          25.391811557456094
+        ]
+      },
+      "properties": {
+        "id": "syn_51",
+        "event_date": "2023-06-14",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.20792695869159,
+          25.233359723208967
+        ]
+      },
+      "properties": {
+        "id": "syn_52",
+        "event_date": "2023-08-22",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.34177384638829,
+          25.30466249878134
+        ]
+      },
+      "properties": {
+        "id": "syn_53",
+        "event_date": "2023-07-15",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.72309518436364,
+          25.5723028330862
+        ]
+      },
+      "properties": {
+        "id": "syn_54",
+        "event_date": "2018-09-04",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.12996036551169,
+          25.401890384460263
+        ]
+      },
+      "properties": {
+        "id": "syn_55",
+        "event_date": "2018-12-25",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.10030051981067,
+          25.6870415602616
+        ]
+      },
+      "properties": {
+        "id": "syn_56",
+        "event_date": "2016-09-28",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.15755454178407,
+          25.306966616118384
+        ]
+      },
+      "properties": {
+        "id": "syn_57",
+        "event_date": "2023-09-03",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.36001261997912,
+          25.279853858153505
+        ]
+      },
+      "properties": {
+        "id": "syn_58",
+        "event_date": "2021-06-15",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.94429196620773,
+          25.41131817725147
+        ]
+      },
+      "properties": {
+        "id": "syn_59",
+        "event_date": "2020-07-02",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.03454339244034,
+          25.552335160874854
+        ]
+      },
+      "properties": {
+        "id": "syn_60",
+        "event_date": "2020-09-29",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.07181210193573,
+          25.72515622985031
+        ]
+      },
+      "properties": {
+        "id": "syn_61",
+        "event_date": "2022-08-19",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.79929718593232,
+          25.137021184180323
+        ]
+      },
+      "properties": {
+        "id": "syn_62",
+        "event_date": "2016-07-23",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.18593499385152,
+          25.3000229259241
+        ]
+      },
+      "properties": {
+        "id": "syn_63",
+        "event_date": "2022-09-29",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.07722585497827,
+          25.621293939795628
+        ]
+      },
+      "properties": {
+        "id": "syn_64",
+        "event_date": "2021-08-28",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.05797043719008,
+          25.073721015711197
+        ]
+      },
+      "properties": {
+        "id": "syn_65",
+        "event_date": "2023-06-05",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.9968920254057,
+          25.420408649189056
+        ]
+      },
+      "properties": {
+        "id": "syn_66",
+        "event_date": "2020-10-04",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.20472112079432,
+          25.270285044619026
+        ]
+      },
+      "properties": {
+        "id": "syn_67",
+        "event_date": "2016-08-04",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.1957059828892,
+          25.343844084292016
+        ]
+      },
+      "properties": {
+        "id": "syn_68",
+        "event_date": "2022-07-09",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.27732154615941,
+          25.17199734161994
+        ]
+      },
+      "properties": {
+        "id": "syn_69",
+        "event_date": "2021-07-27",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.21190013718483,
+          25.25799275022972
+        ]
+      },
+      "properties": {
+        "id": "syn_70",
+        "event_date": "2018-07-08",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.25667419940123,
+          25.500773049041037
+        ]
+      },
+      "properties": {
+        "id": "syn_71",
+        "event_date": "2019-06-18",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8513612977674,
+          25.624467832262724
+        ]
+      },
+      "properties": {
+        "id": "syn_72",
+        "event_date": "2018-07-24",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.25005913469852,
+          25.247609301459192
+        ]
+      },
+      "properties": {
+        "id": "syn_73",
+        "event_date": "2023-09-26",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.22203680777393,
+          25.243216884062328
+        ]
+      },
+      "properties": {
+        "id": "syn_74",
+        "event_date": "2018-06-14",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.68421521079328,
+          25.13330801288374
+        ]
+      },
+      "properties": {
+        "id": "syn_75",
+        "event_date": "2023-06-30",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.06583287607047,
+          25.744639517951224
+        ]
+      },
+      "properties": {
+        "id": "syn_76",
+        "event_date": "2016-08-13",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.67982095110273,
+          25.546525793301274
+        ]
+      },
+      "properties": {
+        "id": "syn_77",
+        "event_date": "2020-08-17",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.05213404605483,
+          25.740530472685457
+        ]
+      },
+      "properties": {
+        "id": "syn_78",
+        "event_date": "2019-07-01",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.88314150451907,
+          25.1954560432602
+        ]
+      },
+      "properties": {
+        "id": "syn_79",
+        "event_date": "2022-07-27",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.07048367853137,
+          25.248391276503938
+        ]
+      },
+      "properties": {
+        "id": "syn_80",
+        "event_date": "2015-06-17",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.02297263675374,
+          25.735882917154633
+        ]
+      },
+      "properties": {
+        "id": "syn_81",
+        "event_date": "2022-05-30",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.92527217451398,
+          25.571030146359085
+        ]
+      },
+      "properties": {
+        "id": "syn_82",
+        "event_date": "2017-08-19",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.08173902179996,
+          25.058440703793522
+        ]
+      },
+      "properties": {
+        "id": "syn_83",
+        "event_date": "2020-08-01",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.0539729879065,
+          25.461757133971304
+        ]
+      },
+      "properties": {
+        "id": "syn_84",
+        "event_date": "2015-07-08",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.82768309961095,
+          25.328537311713575
+        ]
+      },
+      "properties": {
+        "id": "syn_85",
+        "event_date": "2017-06-04",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.96826057149038,
+          25.375928744883375
+        ]
+      },
+      "properties": {
+        "id": "syn_86",
+        "event_date": "2024-06-20",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.67544624974283,
+          25.168405743121085
+        ]
+      },
+      "properties": {
+        "id": "syn_87",
+        "event_date": "2020-11-05",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.01877560508248,
+          25.687537553106566
+        ]
+      },
+      "properties": {
+        "id": "syn_88",
+        "event_date": "2021-09-26",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.0338320430047,
+          25.19111964871414
+        ]
+      },
+      "properties": {
+        "id": "syn_89",
+        "event_date": "2023-06-02",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.13546384274012,
+          25.482323158302442
+        ]
+      },
+      "properties": {
+        "id": "syn_90",
+        "event_date": "2015-10-06",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.14592201364214,
+          25.052753996605873
+        ]
+      },
+      "properties": {
+        "id": "syn_91",
+        "event_date": "2019-06-30",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.9016745789232,
+          25.31792935678092
+        ]
+      },
+      "properties": {
+        "id": "syn_92",
+        "event_date": "2017-11-13",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.96442353016512,
+          25.706735096160635
+        ]
+      },
+      "properties": {
+        "id": "syn_93",
+        "event_date": "2024-09-25",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.73911054435679,
+          25.139938886699788
+        ]
+      },
+      "properties": {
+        "id": "syn_94",
+        "event_date": "2017-09-04",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.77201428388177,
+          25.12341586613681
+        ]
+      },
+      "properties": {
+        "id": "syn_95",
+        "event_date": "2020-08-14",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.05156547934124,
+          25.7459268807003
+        ]
+      },
+      "properties": {
+        "id": "syn_96",
+        "event_date": "2021-04-02",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.901410137455,
+          25.745493806830122
+        ]
+      },
+      "properties": {
+        "id": "syn_97",
+        "event_date": "2024-06-10",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.12005212194343,
+          25.14109577130296
+        ]
+      },
+      "properties": {
+        "id": "syn_98",
+        "event_date": "2023-11-04",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.69657556426,
+          25.576732479036373
+        ]
+      },
+      "properties": {
+        "id": "syn_99",
+        "event_date": "2016-09-07",
+        "source": "Synthetic Demo Data",
+        "description": "Synthetic landslide point for Dima Hasao demonstration",
+        "is_demo_data": true
+      }
+    }
+  ]
+}
