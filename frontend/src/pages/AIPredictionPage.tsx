@@ -66,7 +66,8 @@ async function fetchPrediction(loc: DemoLocation, rainfallBoost: number): Promis
     historical_landslides: loc.historical_landslides,
     ground_deformation:    loc.ground_deformation,
   };
-  const res = await fetch('http://127.0.0.1:8000/api/v1/ml/predict', {
+  const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api/v1';
+  const res = await fetch(`${API_URL}/ml/predict`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
