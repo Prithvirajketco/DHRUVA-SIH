@@ -138,11 +138,11 @@ function LocationDetailPanel({
       <div className="glass-panel rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] overflow-y-auto">
 
         {/* Header */}
-        <div className="flex items-center justify-between p-5 border-b border-slate-800">
+        <div className="flex items-center justify-between p-5 border-b border-slate-200">
           <div className="flex items-center gap-3">
             <MapPin size={20} className="text-blue-500" />
             <div>
-              <h2 className="text-xl font-black text-white">{loc.name}</h2>
+              <h2 className="text-xl font-black text-slate-800">{loc.name}</h2>
               <p className="text-xs text-slate-500 font-mono">{loc.lat.toFixed(3)}°N, {loc.lon.toFixed(3)}°E · {loc.elevation}m elev.</p>
             </div>
             <div className={`ml-3 flex items-center gap-1.5 px-3 py-1 rounded-full border text-xs font-bold ${getRiskBg(result?.current_risk ?? 0)}`}>
@@ -150,8 +150,8 @@ function LocationDetailPanel({
               <span className={riskLabel.color}>{riskLabel.text}</span>
             </div>
           </div>
-          <button onClick={onClose} className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition-colors">
-            <X size={18} className="text-slate-400" />
+          <button onClick={onClose} className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 transition-colors">
+            <X size={18} className="text-slate-500" />
           </button>
         </div>
 
@@ -162,7 +162,7 @@ function LocationDetailPanel({
               <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2">
                 <TrendingUp size={14} className="text-blue-400" /> 24-Hour Forecast
               </h3>
-              <span className="text-xs font-mono bg-slate-900 text-slate-400 px-2 py-1 rounded border border-slate-800">
+              <span className="text-xs font-mono bg-slate-50 text-slate-600 px-2 py-1 rounded border border-slate-200">
                 FoS: <span style={{ color: getFosColor(result?.fos ?? fos) }}>{(result?.fos ?? fos).toFixed(2)}</span>
               </span>
             </div>
@@ -172,7 +172,7 @@ function LocationDetailPanel({
                 { label: '+6H',val: result?.temporal_projection[1] },
                 { label: '+72H',val: result?.temporal_projection[2] },
               ].map((item, i) => (
-                <div key={i} className="bg-slate-900/50 rounded-lg p-2 text-center border border-slate-800">
+                <div key={i} className="bg-slate-50 rounded-lg p-2 text-center border border-slate-200">
                   <p className="text-xs text-slate-500 font-semibold">{item.label}</p>
                   <p className="text-xl font-black" style={{ color: item.val !== undefined ? getRiskColor(item.val) : '#64748b' }}>
                     {item.val !== undefined ? `${item.val}%` : '—'}
@@ -193,7 +193,7 @@ function LocationDetailPanel({
                       label={{ value: 'Critical', fill: '#ef444480', fontSize: 10, position: 'insideTopLeft' }} />
                     <Line type="monotone" dataKey="risk" stroke={getRiskColor(result.current_risk)}
                       strokeWidth={3} dot={{ r: 5, fill: '#ffffff', strokeWidth: 2, stroke: getRiskColor(result.current_risk) }}
-                      animationDuration={400} />
+                      animationDuration={200} />
                   </LineChart>
                 </ResponsiveContainer>
               ) : (
@@ -209,17 +209,17 @@ function LocationDetailPanel({
             </h3>
             <div className="space-y-2 font-mono text-xs">
               {[
-                { label: 'Pore Pressure', val: `${poreP.toFixed(1)} kPa`, color: 'text-blue-400' },
-                { label: 'Effective Stress', val: `${effS.toFixed(1)} kPa`, color: 'text-yellow-400' },
+                { label: 'Pore Pressure', val: `${poreP.toFixed(1)} kPa`, color: 'text-blue-600' },
+                { label: 'Effective Stress', val: `${effS.toFixed(1)} kPa`, color: 'text-yellow-600' },
                 { label: 'Resisting', val: resisting.toFixed(1), color: 'text-green-600' },
-                { label: 'Driving', val: driving.toFixed(1), color: 'text-red-400' },
+                { label: 'Driving', val: driving.toFixed(1), color: 'text-red-600' },
               ].map(row => (
-                <div key={row.label} className="bg-slate-900/50 rounded-lg px-3 py-2 flex justify-between">
-                  <span className="text-slate-400">{row.label}</span>
+                <div key={row.label} className="bg-slate-50 rounded-lg px-3 py-2 flex justify-between border border-slate-200">
+                  <span className="text-slate-600">{row.label}</span>
                   <span className={`font-bold ${row.color}`}>{row.val}</span>
                 </div>
               ))}
-              <div className={`rounded-lg px-3 py-2 border ${fos <= 1 ? 'border-red-700 bg-red-900/20' : fos <= 1.5 ? 'border-yellow-700 bg-yellow-900/20' : 'border-green-700 bg-green-900/10'}`}>
+              <div className={`rounded-lg px-3 py-2 border ${fos <= 1 ? 'border-red-200 bg-red-50' : fos <= 1.5 ? 'border-yellow-200 bg-yellow-50' : 'border-green-200 bg-green-50'}`}>
                 <p className="text-slate-500 mb-0.5">Factor of Safety</p>
                 <p className="text-lg font-black" style={{ color: getFosColor(fos) }}>
                   {fos.toFixed(3)} <span className="text-xs font-normal">{fos <= 1 ? '⚠ FAILING' : fos <= 1.5 ? '⚡ MARGINAL' : '✓ STABLE'}</span>
@@ -251,9 +251,9 @@ function LocationDetailPanel({
                 <BarChart data={contribData} layout="vertical" margin={{ top: 0, right: 8, left: 0, bottom: 0 }}>
                   <XAxis type="number" domain={[0, 100]} stroke="#475569" fontSize={10} tickLine={false} axisLine={false} />
                   <YAxis type="category" dataKey="name" stroke="#475569" fontSize={10} tickLine={false} axisLine={false} width={72} />
-                  <Tooltip contentStyle={{ backgroundColor: '#0f172a', border: '1px solid #1e293b', borderRadius: '8px' }}
+                  <Tooltip contentStyle={{ backgroundColor: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '8px', color: '#1e293b' }}
                     formatter={(v: number) => [`${v}%`, 'Relative']} />
-                  <Bar dataKey="value" radius={[0, 3, 3, 0]} animationDuration={400}>
+                  <Bar dataKey="value" radius={[0, 3, 3, 0]} animationDuration={200}>
                     {contribData.map((entry, i) => <Cell key={i} fill={entry.color} fillOpacity={0.8} />)}
                   </Bar>
                 </BarChart>
@@ -274,9 +274,9 @@ function LocationDetailPanel({
                 { icon: <Clock size={13} className="text-red-500" />, label: 'Historical Events', val: `${loc.historical_landslides}` },
                 { icon: <Activity size={13} className="text-purple-500" />, label: 'Deformation', val: `${loc.ground_deformation} mm` },
               ].map(row => (
-                <div key={row.label} className="flex items-center justify-between bg-slate-900/50 rounded-lg px-3 py-2 border border-slate-800">
-                  <span className="flex items-center gap-2 text-xs text-slate-400">{row.icon}{row.label}</span>
-                  <span className="text-xs font-bold text-slate-200">{row.val} <span className="text-slate-500">{row.sub}</span></span>
+                <div key={row.label} className="flex items-center justify-between bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">
+                  <span className="flex items-center gap-2 text-xs text-slate-600">{row.icon}{row.label}</span>
+                  <span className="text-xs font-bold text-slate-700">{row.val} <span className="text-slate-400">{row.sub}</span></span>
                 </div>
               ))}
             </div>
@@ -284,7 +284,7 @@ function LocationDetailPanel({
 
           {/* Pipeline */}
           <div className="lg:col-span-3 glass-card rounded-xl p-4 relative">
-            <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">Active ML Pipeline — {loc.name}</p>
+            <p className="text-xs font-bold text-blue-500 uppercase tracking-widest mb-3">Active ML Pipeline — {loc.name}</p>
             <div className="flex flex-col sm:flex-row items-stretch gap-1">
               {[
                 { stage: 0, icon: <Database size={14} />, title: 'Physics Engine', color: 'yellow', output: `FoS = ${fos.toFixed(3)}` },
@@ -292,32 +292,32 @@ function LocationDetailPanel({
                 { stage: 2, icon: <Cpu size={14} />, title: 'LSTM Projection', color: 'purple', output: `+72h = ${result?.temporal_projection[2] ?? '…'}%` },
               ].map((s, i) => {
                 const colors: Record<string, string> = {
-                  yellow: activeStage === s.stage ? 'border-yellow-500 bg-yellow-900/20 shadow-[0_0_10px_rgba(234,179,8,0.2)]' : 'border-slate-800 bg-slate-900/50',
-                  blue:   activeStage === s.stage ? 'border-blue-500 bg-blue-900/20 shadow-[0_0_10px_rgba(59,130,246,0.2)]' : 'border-slate-800 bg-slate-900/50',
-                  purple: activeStage === s.stage ? 'border-purple-500 bg-purple-900/20 shadow-[0_0_10px_rgba(168,85,247,0.2)]' : 'border-slate-800 bg-slate-900/50',
+                  yellow: activeStage === s.stage ? 'border-yellow-400 bg-yellow-50 shadow-[0_0_10px_rgba(234,179,8,0.2)]' : 'border-slate-200 bg-slate-50',
+                  blue:   activeStage === s.stage ? 'border-blue-400 bg-blue-50 shadow-[0_0_10px_rgba(59,130,246,0.2)]' : 'border-slate-200 bg-slate-50',
+                  purple: activeStage === s.stage ? 'border-purple-400 bg-purple-50 shadow-[0_0_10px_rgba(168,85,247,0.2)]' : 'border-slate-200 bg-slate-50',
                 };
-                const iconColors: Record<string, string> = { yellow: 'text-yellow-500', blue: 'text-blue-500', purple: 'text-purple-500' };
+                const iconColors: Record<string, string> = { yellow: 'text-yellow-600', blue: 'text-blue-600', purple: 'text-purple-600' };
                 return (
                   <React.Fragment key={s.stage}>
                     <div className={`flex-1 rounded-lg px-3 py-2.5 border transition-all duration-300 ${colors[s.color]}`}>
                       <div className="flex items-center gap-2 mb-1">
                         <span className={iconColors[s.color]}>{s.icon}</span>
-                        <span className="text-xs font-bold text-slate-300">{s.title}</span>
-                        {activeStage === s.stage && <span className="ml-auto text-xs animate-pulse font-mono" style={{ color: ['#f59e0b','#3b82f6','#a855f7'][s.stage] }}>RUNNING</span>}
+                        <span className="text-xs font-bold text-slate-700">{s.title}</span>
+                        {activeStage === s.stage && <span className="ml-auto text-xs animate-pulse font-mono" style={{ color: ['#d97706','#2563eb','#9333ea'][s.stage] }}>RUNNING</span>}
                       </div>
-                      <p className="font-mono text-xs font-bold" style={{ color: ['#fbbf24','#60a5fa','#c084fc'][s.stage] }}>→ {s.output}</p>
+                      <p className="font-mono text-xs font-bold" style={{ color: ['#d97706','#2563eb','#9333ea'][s.stage] }}>→ {s.output}</p>
                     </div>
-                    {i < 2 && <div className="flex items-center px-1"><ChevronRight size={14} className="text-slate-500" /></div>}
+                    {i < 2 && <div className="flex items-center px-1"><ChevronRight size={14} className="text-slate-400" /></div>}
                   </React.Fragment>
                 );
               })}
-              <div className="flex items-center px-1"><ChevronRight size={14} className={result ? 'text-green-500' : 'text-slate-600'} /></div>
-              <div className={`flex-1 rounded-lg px-3 py-2.5 border transition-all duration-300 ${result ? 'border-green-500/50 bg-green-900/20' : 'border-slate-800 bg-slate-900/50'}`}>
+              <div className="flex items-center px-1"><ChevronRight size={14} className={result ? 'text-green-500' : 'text-slate-400'} /></div>
+              <div className={`flex-1 rounded-lg px-3 py-2.5 border transition-all duration-300 ${result ? 'border-green-200 bg-green-50' : 'border-slate-200 bg-slate-50'}`}>
                 <div className="flex items-center gap-2 mb-1">
-                  <Zap size={14} className={result ? 'text-green-500' : 'text-slate-500'} />
-                  <span className="text-xs font-bold text-slate-300">API Output</span>
+                  <Zap size={14} className={result ? 'text-green-600' : 'text-slate-400'} />
+                  <span className="text-xs font-bold text-slate-700">API Output</span>
                 </div>
-                <p className="font-mono text-xs text-green-400">
+                <p className="font-mono text-xs text-green-600">
                   {result ? `{ risk:${result.current_risk}%, fos:${result.fos} }` : 'awaiting...'}
                 </p>
               </div>
@@ -428,21 +428,21 @@ export default function AIPredictionPage() {
   const [modelVersion, setModelVersion] = useState('—');
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const runAll = useCallback(async (boost: number) => {
+  const runAll = useCallback((boost: number) => {
     setPredictions(prev => prev.map(p => ({ ...p, loading: true, error: false })));
-    const results = await Promise.allSettled(
-      DIMA_HASAO_LOCATIONS.map(loc => fetchPrediction(loc, boost))
-    );
-    setPredictions(prev =>
-      prev.map((p, i) => {
-        const r = results[i];
-        if (r.status === 'fulfilled') {
-          if (!modelVersion || modelVersion === '—') setModelVersion(r.value.model_version);
-          return { ...p, result: r.value, loading: false, error: false };
-        }
-        return { ...p, loading: false, error: true };
-      })
-    );
+    DIMA_HASAO_LOCATIONS.forEach(async (loc) => {
+      try {
+        const result = await fetchPrediction(loc, boost);
+        setModelVersion(prev => (prev === '—' ? result.model_version : prev));
+        setPredictions(prev =>
+          prev.map(p => (p.loc.id === loc.id ? { ...p, result, loading: false, error: false } : p))
+        );
+      } catch (err) {
+        setPredictions(prev =>
+          prev.map(p => (p.loc.id === loc.id ? { ...p, loading: false, error: true } : p))
+        );
+      }
+    });
   }, []);
 
   // Initial load
@@ -452,7 +452,7 @@ export default function AIPredictionPage() {
   const handleBoostChange = (val: number) => {
     setRainfallBoost(val);
     if (debounceRef.current) clearTimeout(debounceRef.current);
-    debounceRef.current = setTimeout(() => runAll(val), 400);
+    debounceRef.current = setTimeout(() => runAll(val), 100);
   };
 
   const selectedPred = predictions.find(p => p.loc.id === selectedId);
