@@ -28,7 +28,7 @@ export default function RiskCard({ location, risk, isSimulating, onClose, onRunS
   };
 
   return (
-    <div className="absolute right-4 top-4 bottom-4 w-[450px] glass-panel bg-slate-950/80 border border-white/10 rounded-xl z-[1000] p-5 flex flex-col overflow-y-auto text-slate-200 hide-scrollbar">
+    <div className="absolute right-4 left-4 sm:left-auto top-4 bottom-4 w-auto sm:w-[450px] glass-panel bg-slate-950/80 border border-white/10 rounded-xl z-[1000] p-5 flex flex-col overflow-y-auto text-slate-200 hide-scrollbar">
       {/* Header */}
       <div className="flex justify-between items-start mb-4">
         <div>

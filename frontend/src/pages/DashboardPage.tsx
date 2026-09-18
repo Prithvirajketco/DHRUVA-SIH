@@ -62,23 +62,23 @@ export default function DashboardPage({ setActiveTab }: DashboardPageProps) {
   };
 
   return (
-    <div className="flex w-full h-full font-sans overflow-hidden relative bg-slate-900">
+    <div className="flex flex-col md:flex-row w-full h-full font-sans overflow-y-auto md:overflow-hidden relative bg-slate-900">
       
       {/* GLOBAL Immersive Background */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center opacity-80"
+        className="fixed inset-0 z-0 bg-cover bg-center opacity-80"
         style={{ backgroundImage: 'url(/mountain_bg.png)' }}
       ></div>
       {/* Soft atmospheric overlay */}
-      <div className="absolute inset-0 z-0 pointer-events-none" 
+      <div className="fixed inset-0 z-0 pointer-events-none" 
         style={{ background: 'linear-gradient(135deg, rgba(244,245,247,0.8) 0%, rgba(15,23,42,0.4) 100%)' }}
       ></div>
 
       {/* DYNAMIC THREAT BORDER (Simulating a HIGH risk scenario pulse) */}
-      <div className="absolute inset-0 z-[100] pointer-events-none border-[6px] border-[#E11D48]/30 shadow-[inset_0_0_50px_rgba(225,29,72,0.2)] animate-pulse transition-opacity duration-1000 opacity-100"></div>
+      <div className="fixed inset-0 z-[100] pointer-events-none border-[6px] border-[#E11D48]/30 shadow-[inset_0_0_50px_rgba(225,29,72,0.2)] animate-pulse transition-opacity duration-1000 opacity-100"></div>
 
       {/* LEFT PANEL - Glass Frosted */}
-      <div className="w-[500px] shrink-0 h-full flex flex-col z-10 glass-frosted border-r border-white/50 overflow-y-auto">
+      <div className="w-full md:w-[500px] shrink-0 h-auto md:h-full flex flex-col z-10 glass-frosted border-b md:border-b-0 md:border-r border-white/50 md:overflow-y-auto">
         
         {/* Header */}
         <div className="p-8 pb-4">
@@ -123,7 +123,7 @@ export default function DashboardPage({ setActiveTab }: DashboardPageProps) {
           </div>
 
           {/* Metrics based on tab */}
-          <div className="grid grid-cols-3 gap-4 mb-8 bg-white p-4 rounded-2xl shadow-soft border border-slate-100">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 bg-white p-4 rounded-2xl shadow-soft border border-slate-100">
             {activeTab === 'terrain' && (
               <>
                 <MetricCard label="Avg Slope" value="32°" subValue="Max: 45°" />
@@ -179,7 +179,7 @@ export default function DashboardPage({ setActiveTab }: DashboardPageProps) {
         </div>
 
         {/* Risk Zones Donut & Alerts Split */}
-        <div className="flex-1 px-8 pb-8 grid grid-cols-2 gap-6">
+        <div className="flex-1 px-8 pb-8 grid grid-cols-1 md:grid-cols-2 gap-6">
           
           <div className="flex flex-col bg-white p-5 rounded-2xl shadow-soft border border-slate-100">
             <h3 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Risk Zones</h3>
@@ -243,7 +243,7 @@ export default function DashboardPage({ setActiveTab }: DashboardPageProps) {
       </div>
 
       {/* RIGHT PANEL - Immersive Background */}
-      <div className="flex-1 relative bg-transparent">
+      <div className="flex-1 min-h-[500px] md:min-h-0 relative bg-transparent shrink-0">
         
         {/* Soft atmospheric overlay */}
         <div className="absolute inset-0 pointer-events-none z-10" 

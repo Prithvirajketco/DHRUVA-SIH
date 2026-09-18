@@ -23,8 +23,8 @@ export default function AlertsPage() {
                 alert.risk === 'HIGH' ? 'border-risk-high/40 shadow-[0_4px_20px_rgba(249,115,22,0.1)]' : 'border-risk-moderate/40 shadow-[0_4px_20px_rgba(245,158,11,0.1)]'
               : 'border-slate-200 opacity-80'
           }`}>
-            <div className="flex justify-between items-start mb-4">
-              <div className="flex items-center gap-3">
+            <div className="flex flex-col md:flex-row justify-between items-start mb-4 gap-4 md:gap-0">
+              <div className="flex flex-wrap items-center gap-3">
                 <span className={`px-3 py-1 rounded font-bold text-sm text-white ${
                   alert.risk === 'VERY HIGH' ? 'bg-risk-very-high shadow-sm' : 
                   alert.risk === 'HIGH' ? 'bg-risk-high shadow-sm' : 'bg-risk-moderate !text-slate-900 shadow-sm'
@@ -37,7 +37,7 @@ export default function AlertsPage() {
                 </span>
                 <span className="text-sm font-semibold text-slate-700 bg-slate-100 px-2 py-1 rounded border border-slate-200">Score: {alert.score}/100</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-500 text-sm font-medium">
+              <div className="flex flex-wrap items-center gap-2 text-slate-500 text-sm font-medium">
                 <Calendar size={16} />
                 {alert.time}
                 {!alert.active && <span className="ml-2 bg-slate-100 border border-slate-200 text-slate-500 px-2 py-1 rounded text-xs font-bold">RESOLVED</span>}

@@ -31,14 +31,14 @@ export default function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
   ];
 
   return (
-    <div className="w-[88px] bg-[#1E293B] border-r border-slate-800 text-slate-300 flex flex-col h-full shrink-0 items-center py-8 z-50">
-      <div className="mb-10 flex flex-col items-center">
+    <div className="w-full md:w-[88px] h-16 md:h-full bg-[#1E293B] border-t md:border-t-0 md:border-r border-slate-800 text-slate-300 flex flex-row md:flex-col shrink-0 items-center justify-around md:justify-start py-0 md:py-8 z-50">
+      <div className="hidden md:flex mb-10 flex-col items-center">
         <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
           <span className="text-[#1E293B] font-black text-2xl">▲</span>
         </div>
       </div>
 
-      <nav className="flex-1 w-full px-3 flex flex-col gap-6 items-center">
+      <nav className="flex-1 w-full md:px-3 flex flex-row md:flex-col justify-around md:justify-start md:gap-6 items-center">
         {navItems.map((item) => (
           <button
             key={item.id}
@@ -49,14 +49,14 @@ export default function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
                 : 'text-slate-400 hover:text-white hover:bg-white/10'}`}
           >
             {activeTab === item.id && (
-              <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-1 h-8 bg-white rounded-r-md"></div>
+              <div className="absolute -bottom-1 md:-left-3 md:top-1/2 md:bottom-auto md:-translate-y-1/2 w-8 h-1 md:w-1 md:h-8 bg-white rounded-t-md md:rounded-t-none md:rounded-r-md"></div>
             )}
             <item.icon size={20} strokeWidth={activeTab === item.id ? 2.5 : 2} />
           </button>
         ))}
       </nav>
 
-      <div className="mt-4 flex flex-col items-center gap-2">
+      <div className="hidden md:flex mt-4 flex-col items-center gap-2">
         <div 
           className={`w-3 h-3 rounded-full ${isOffline ? 'bg-risk-very-high' : 'bg-risk-low'} shadow-md`}
           title={isOffline ? 'Offline' : 'Online'}

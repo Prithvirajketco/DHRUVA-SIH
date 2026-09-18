@@ -505,14 +505,14 @@ export default function AIPredictionPage() {
             <span className="text-base font-bold text-[#1E293B]">Storm Simulator</span>
             <span className="text-xs font-semibold text-slate-400">(applies extra rainfall to all stations)</span>
           </div>
-          <div className="flex-1 min-w-[300px] flex items-center gap-4">
+          <div className="flex-1 min-w-[200px] sm:min-w-[300px] flex items-center gap-4">
             <div className="relative flex-1 h-3 bg-slate-100 rounded-full border border-slate-200">
               <div className="absolute h-full rounded-full bg-blue-500 transition-all shadow-[0_0_10px_rgba(59,130,246,0.5)]" style={{ width: `${(rainfallBoost / 250) * 100}%` }} />
             </div>
             <input
               type="range" min={0} max={250} step={5} value={rainfallBoost}
               onChange={e => handleBoostChange(parseInt(e.target.value))}
-              className="absolute opacity-0 w-full max-w-[400px] cursor-pointer h-3"
+              className="absolute opacity-0 w-full max-w-[200px] sm:max-w-[400px] cursor-pointer h-3"
               style={{ position: 'relative', marginTop: '-12px' }}
             />
             <span className={`text-base font-black w-20 ${rainfallBoost > 100 ? 'text-red-500' : rainfallBoost > 50 ? 'text-yellow-500' : 'text-blue-500'}`}>
