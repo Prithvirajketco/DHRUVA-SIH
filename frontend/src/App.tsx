@@ -12,8 +12,9 @@ function App() {
   const [activeTab, setActiveTab] = useState('map');
 
   return (
-    <div className="flex flex-col md:flex-row h-screen w-full bg-base overflow-hidden font-sans">
-      <div className="flex-1 relative overflow-hidden bg-base order-1 md:order-2">
+    <div className="flex h-[100dvh] w-full bg-base overflow-hidden font-sans relative">
+      {/* Main Content Area */}
+      <div className="flex-1 relative overflow-hidden bg-base w-full pb-16 md:pb-0 md:pl-[88px]">
         {activeTab === 'dashboard' && <DashboardPage setActiveTab={setActiveTab} />}
         {activeTab === 'map' && <MapPage />}
         {activeTab === 'alerts' && <AlertsPage />}
@@ -24,7 +25,8 @@ function App() {
         {activeTab === 'settings' && <SettingsPage />}
       </div>
       
-      <div className="order-2 md:order-1 z-50">
+      {/* Sidebar - Fixed to bottom on mobile, left on desktop */}
+      <div className="fixed bottom-0 left-0 w-full md:top-0 md:h-full md:w-[88px] z-[9999]">
         <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
       </div>
     </div>
