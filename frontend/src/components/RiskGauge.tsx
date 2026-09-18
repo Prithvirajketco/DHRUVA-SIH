@@ -66,7 +66,7 @@ export default function RiskGauge({ score, category }: RiskGaugeProps) {
       
       <div className="absolute top-[60px] flex flex-col items-center text-center w-full">
         <span className="text-xs font-bold tracking-[0.2em] text-slate-300 mb-1">LANDSLIDE RISK INDEX</span>
-        <span className="text-5xl font-black text-white font-mono">{animatedScore.toFixed(3)}</span>
+        <span className="text-5xl font-black text-white font-mono drop-shadow-md">{animatedScore.toFixed(1)}</span>
         <span className={`text-xs font-bold mt-2 px-3 py-1 rounded-full bg-white/10 ${colorClass}`}>
           ({category})
         </span>

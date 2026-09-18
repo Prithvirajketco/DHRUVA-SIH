@@ -243,33 +243,42 @@ export default function DashboardPage({ setActiveTab }: DashboardPageProps) {
       </div>
 
       {/* RIGHT PANEL - Immersive Background */}
-      <div className="flex-1 min-h-[500px] md:min-h-0 relative bg-transparent shrink-0">
+      <div className="flex-1 min-h-[600px] md:min-h-0 relative bg-transparent shrink-0 flex flex-col justify-between py-12 md:py-0 md:block">
         
         {/* Soft atmospheric overlay */}
         <div className="absolute inset-0 pointer-events-none z-10" 
-          style={{ background: 'linear-gradient(180deg, rgba(15,23,42,0.0) 0%, rgba(15,23,42,0.4) 100%)' }}
+          style={{ background: 'linear-gradient(180deg, rgba(15,23,42,0.0) 0%, rgba(15,23,42,0.6) 100%)' }}
         ></div>
 
-        {/* Top Header Overlay */}
-        <div className="absolute top-16 left-0 right-0 flex flex-col items-center text-center z-20 pointer-events-none drop-shadow-lg">
-          <h1 className="text-4xl font-light text-white mb-3">Dima Hasao District</h1>
+        {/* Top Header */}
+        <div className="relative md:absolute top-0 md:top-16 left-0 right-0 flex flex-col items-center text-center z-20 pointer-events-none drop-shadow-lg mb-8 md:mb-0">
+          <h1 className="text-3xl md:text-4xl font-light text-white mb-3 px-4">Dima Hasao District</h1>
           <p className="text-sm font-semibold text-slate-200/80 uppercase tracking-[0.2em]">Assam, India</p>
         </div>
 
         {/* Floating Stat Pills overlaying the mountain */}
-        <div className="absolute inset-0 z-20 pointer-events-none">
-          <StatPill label="Rainfall Rate" value="124" unit="mm/24h" top="28%" left="12%" align="left" />
-          <StatPill label="Avg Slope" value="32" unit="deg" top="38%" right="12%" align="right" />
-          <StatPill label="SAR Coherence" value="0.32" unit="(low)" top="55%" left="15%" align="left" />
+        <div className="relative md:absolute inset-0 z-20 pointer-events-none flex flex-row flex-wrap justify-center gap-3 px-2">
+          {/* Mobile Layout */}
+          <div className="md:hidden flex flex-row flex-wrap justify-center gap-3 w-full">
+            <StatPill label="Rainfall Rate" value="124" unit="mm/24h" align="center" className="relative shadow-xl border border-white/10 bg-black/20" />
+            <StatPill label="Avg Slope" value="32" unit="deg" align="center" className="relative shadow-xl border border-white/10 bg-black/20" />
+            <StatPill label="SAR Coherence" value="0.32" unit="(low)" align="center" className="relative shadow-xl border border-white/10 bg-black/20" />
+          </div>
+          {/* Desktop Layout */}
+          <div className="hidden md:block w-full h-full">
+            <StatPill label="Rainfall Rate" value="124" unit="mm/24h" top="28%" left="12%" align="left" className="absolute shadow-xl border border-white/10 bg-black/20" />
+            <StatPill label="Avg Slope" value="32" unit="deg" top="38%" right="12%" align="right" className="absolute shadow-xl border border-white/10 bg-black/20" />
+            <StatPill label="SAR Coherence" value="0.32" unit="(low)" top="55%" left="15%" align="left" className="absolute shadow-xl border border-white/10 bg-black/20" />
+          </div>
         </div>
 
         {/* Center/Bottom Gauge */}
-        <div className="absolute bottom-28 left-1/2 -translate-x-1/2 z-20 pointer-events-none drop-shadow-2xl flex flex-col items-center">
+        <div className="relative mt-8 md:mt-0 md:absolute md:bottom-32 md:left-1/2 md:-translate-x-1/2 z-20 pointer-events-none drop-shadow-2xl flex flex-col items-center scale-90 md:scale-100">
           <RiskGauge score={68.4} category="HIGH RISK" />
         </div>
 
         {/* Bottom CTA */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex flex-col sm:flex-row gap-4 w-[90%] sm:w-max">
+        <div className="relative mt-8 md:mt-0 z-30 flex flex-col sm:flex-row gap-4 w-[90%] mx-auto md:w-max md:absolute md:bottom-8 md:left-1/2 md:-translate-x-1/2 px-2">
           <button 
             onClick={() => setActiveTab?.('prediction')}
             className="w-full sm:w-auto bg-[#1e293b]/90 backdrop-blur-md border border-slate-600 hover:bg-[#1e293b] text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition-all transform hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-3"

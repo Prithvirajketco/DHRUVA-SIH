@@ -5,14 +5,17 @@ interface StatPillProps {
   label: string;
   value: string | number;
   unit: string;
-  align?: 'left' | 'right';
-  top: string;
+  align?: 'left' | 'right' | 'center';
+  top?: string;
   left?: string;
   right?: string;
+  className?: string;
 }
 
-export default function StatPill({ label, value, unit, align = 'left', top, left, right }: StatPillProps) {
+export default function StatPill({ label, value, unit, align = 'left', top, left, right, className = '' }: StatPillProps) {
   const isLeft = align === 'left';
+  const isRight = align === 'right';
+  const isCenter = align === 'center';
   
   // Try to parse string to number for animation
   const numericValue = useMemo(() => {
@@ -34,30 +37,34 @@ export default function StatPill({ label, value, unit, align = 'left', top, left
 
   return (
     <div 
-      className="absolute glass-frosted rounded-full px-4 py-2 flex items-center gap-3 shadow-lg"
+      className={`glass-frosted rounded-full px-4 py-2 flex items-center gap-3 shadow-lg ${className}`}
       style={{ top, left, right }}
     >
       {isLeft && (
-        <div className="w-2 h-2 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]"></div>
+        <div className="w-2 h-2 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)] shrink-0"></div>
       )}
       <div className="flex flex-col">
-        <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">{label}</span>
+        <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider whitespace-nowrap">{label}</span>
         <div className="flex items-baseline gap-1">
           <span className="text-sm font-bold text-[#1E293B] font-mono">{displayValue}</span>
-          <span className="text-[10px] text-slate-400">{unit}</span>
+          <span className="text-[10px] text-slate-400 whitespace-nowrap">{unit}</span>
         </div>
       </div>
-      {!isLeft && (
-        <div className="w-2 h-2 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]"></div>
+      {isRight && (
+        <div className="w-2 h-2 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)] shrink-0"></div>
       )}
       
       {/* Decorative connection line */}
-      <div 
-        className={`absolute top-1/2 -translate-y-1/2 w-16 h-[1px] bg-white/30 ${isLeft ? 'right-full' : 'left-full'}`}
-      ></div>
-      <div 
-        className={`absolute top-1/2 -translate-y-1/2 w-[3px] h-[3px] rounded-full bg-white ${isLeft ? 'right-[calc(100%+64px)]' : 'left-[calc(100%+64px)]'}`}
-      ></div>
+      {!isCenter && (
+        <>
+          <div 
+            className={`absolute top-1/2 -translate-y-1/2 w-8 md:w-16 h-[1px] bg-white/30 ${isLeft ? 'right-full' : 'left-full'}`}
+          ></div>
+          <div 
+            className={`absolute top-1/2 -translate-y-1/2 w-[3px] h-[3px] rounded-full bg-white ${isLeft ? 'right-[calc(100%+32px)] md:right-[calc(100%+64px)]' : 'left-[calc(100%+32px)] md:left-[calc(100%+64px)]'}`}
+          ></div>
+        </>
+      )}
     </div>
   );
 }
