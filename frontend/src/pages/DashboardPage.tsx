@@ -102,7 +102,7 @@ export default function DashboardPage({ setActiveTab }: DashboardPageProps) {
           </p>
           
           {/* Tabs */}
-          <div className="flex gap-2 mb-6 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
+          <div className="flex flex-col sm:flex-row gap-2 mb-6 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
             {[
               { id: 'terrain', label: 'Terrain & Slope' },
               { id: 'hydro', label: 'Rainfall & Hydro' },
@@ -111,7 +111,7 @@ export default function DashboardPage({ setActiveTab }: DashboardPageProps) {
               <button
                 key={tab.id}
                 onClick={() => setActiveTabLocal(tab.id)}
-                className={`flex-1 py-2 text-[11px] uppercase font-bold tracking-wider rounded-lg transition-all ${
+                className={`flex-1 py-2 px-1 text-[10px] sm:text-[11px] uppercase font-bold tracking-wider rounded-lg transition-all ${
                   activeTab === tab.id 
                     ? 'bg-white text-[#1E293B] shadow-sm border border-slate-200/50' 
                     : 'text-slate-500 hover:text-[#1E293B] hover:bg-white/50'
@@ -269,16 +269,16 @@ export default function DashboardPage({ setActiveTab }: DashboardPageProps) {
         </div>
 
         {/* Bottom CTA */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex gap-4 w-max">
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex flex-col sm:flex-row gap-4 w-[90%] sm:w-max">
           <button 
             onClick={() => setActiveTab?.('prediction')}
-            className="bg-[#1e293b]/90 backdrop-blur-md border border-slate-600 hover:bg-[#1e293b] text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition-all transform hover:-translate-y-1 active:translate-y-0 flex items-center gap-3"
+            className="w-full sm:w-auto bg-[#1e293b]/90 backdrop-blur-md border border-slate-600 hover:bg-[#1e293b] text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition-all transform hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-3"
           >
             <span className="w-2 h-2 rounded-full bg-[#E11D48] animate-pulse"></span> View Latest Analysis
           </button>
           <button 
             onClick={() => setShowEvacModal(true)}
-            className="bg-[#E11D48]/90 backdrop-blur-md border border-[#E11D48] hover:bg-[#E11D48] text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full shadow-[0_8px_30px_rgba(225,29,72,0.4)] transition-all transform hover:-translate-y-1 active:translate-y-0 flex items-center gap-3"
+            className="w-full sm:w-auto bg-[#E11D48]/90 backdrop-blur-md border border-[#E11D48] hover:bg-[#E11D48] text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full shadow-[0_8px_30px_rgba(225,29,72,0.4)] transition-all transform hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-3"
           >
             <Map size={16} /> Evacuation Route
           </button>
