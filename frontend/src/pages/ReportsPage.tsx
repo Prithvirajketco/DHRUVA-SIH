@@ -71,7 +71,7 @@ export default function ReportsPage() {
 
   return (
     <div className="p-8 h-full overflow-y-auto bg-[#F4F5F7] text-slate-700 relative">
-      <div className="flex justify-between items-center mb-8">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
         <h1 className="text-3xl font-bold text-[#1E293B] flex items-center gap-3">
           <FileText className="text-accent" size={32} />
           Citizen Reports
@@ -91,8 +91,8 @@ export default function ReportsPage() {
         </div>
       )}
 
-      <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200">
-        <table className="w-full text-left border-collapse">
+      <div className="bg-white rounded-xl overflow-x-auto shadow-sm border border-slate-200">
+        <table className="w-full text-left border-collapse min-w-[600px]">
           <thead>
             <tr className="bg-slate-50 text-slate-500 border-b border-slate-200 text-sm uppercase tracking-wider">
               <th className="p-4 font-semibold">Location</th>
