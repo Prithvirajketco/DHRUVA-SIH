@@ -478,6 +478,12 @@ export default function AIPredictionPage() {
   return (
     <div className="p-8 h-full overflow-y-auto bg-[#F4F5F7] text-[#1E293B]">
 
+      {/* Loading Notice Banner */}
+      <div className="bg-blue-50 border border-blue-200 text-blue-700 px-4 py-3 rounded-xl flex items-center gap-3 mb-6 text-sm font-semibold shadow-sm">
+        <Activity size={18} className="animate-pulse shrink-0" />
+        <p>Please note: The AI prediction engine may take a few seconds to process and load the hazard analysis. Please wait.</p>
+      </div>
+
       {/* Header */}
       <div className="flex flex-wrap justify-between items-center mb-8 gap-3">
         <div>
